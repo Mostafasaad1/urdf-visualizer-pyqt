@@ -1,7 +1,5 @@
 # setup.py
 from setuptools import setup, find_packages
-
-# Read the contents of your README file for the long description
 from pathlib import Path
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text(encoding='utf-8')
@@ -9,16 +7,13 @@ long_description = (this_directory / "README.md").read_text(encoding='utf-8')
 setup(
     name='urdf_visualizer',
     version='1.0.0',
-    author='Your Name', # Replace with your name
-    author_email='your.email@example.com', # Replace with your email
+    author='Mostafa Saad', 
+    author_email='mostafa.saad@ejust.edu.eg',
     description='A URDF (Unified Robot Description Format) visualizer using PyQt5 and OpenGL.',
     long_description=long_description,
-    long_description_content_type='text/markdown', # Assuming README is in Markdown
-    url='https://github.com/yourusername/urdf_visualizer', # Replace with your repo URL if applicable
-    # Find all packages automatically within the urdf_visualizer_pkg directory
+    long_description_content_type='text/markdown', 
+    url='https://github.com/Mostafasaad1/urdf-visualizer-pyqt', 
     packages=find_packages(where='.'),
-    # Specify where the main package is located if it's not directly in the root of the repo
-    # package_dir={'': 'urdf_visualizer_pkg'}, # Uncomment if needed, but usually not with this structure
     classifiers=[
         'Development Status :: 4 - Beta', # Adjust as needed (e.g., 3 - Alpha, 5 - Production/Stable)
         'Intended Audience :: Developers',
@@ -40,7 +35,7 @@ setup(
         'PyQt5',
         'PyOpenGL',
         'numpy',
-        # 'trimesh', # Optional, make it optional in code as well
+        'trimesh',
     ],
     # Optional dependencies (extras)
     extras_require={

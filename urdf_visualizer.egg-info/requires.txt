@@ -1,6 +1,7 @@
 PyOpenGL
 PyQt5
 numpy
+trimesh
 
 [mesh]
 trimesh
