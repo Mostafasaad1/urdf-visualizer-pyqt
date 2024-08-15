@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: urdf-visualizer
+Version: 1.0.0
+Summary: A URDF (Unified Robot Description Format) visualizer using PyQt5 and OpenGL.
+Home-page: https://github.com/yourusername/urdf_visualizer
+Author: Your Name
+Author-email: your.email@example.com
+License: UNKNOWN
+Keywords: urdf,robotics,visualization,opengl,pyqt5,3d
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Multimedia :: Graphics :: 3D Rendering
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: mesh
+
+# URDF Visualizer
+
+A Python application for visualizing URDF (Unified Robot Description Format) files using PyQt5 and OpenGL.
+
+## Features
+
+*   3D visualization of robot models defined in URDF.
+*   Interactive camera controls (rotate, pan, zoom).
+*   Joint manipulation via sliders.
+*   Automatic view fitting.
+*   Support for basic URDF primitives (box, sphere, cylinder).
+*   Support for mesh visualization (requires `trimesh`).
+*   Material color rendering from URDF.
+
+## Installation
+
+### Prerequisites
+
+*   Python 3.8 or higher.
+
+### Install from Source (Recommended for Development)
+
+1.  Clone or download this repository.
+2.  Navigate to the `urdf_visualizer_pkg` directory (the one containing `setup.py`).
+3.  It's highly recommended to use a virtual environment:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
+4.  Install the package in editable mode:
+    ```bash
+    pip install -e .
+    ```
+    This installs the package and its dependencies. The `-e` flag means "editable", so changes to the source code are immediately reflected without needing to reinstall.
+
+### Install Optional Mesh Support
+
+For mesh visualization, install the optional `trimesh` dependency:
+
+```bash
+pip install trimesh
+# Or, if you installed the package already:
+pip install urdf_visualizer[mesh]
+```
+

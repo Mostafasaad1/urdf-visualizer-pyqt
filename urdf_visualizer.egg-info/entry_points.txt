@@ -1,0 +1,3 @@
+[console_scripts]
+urdfviz = urdf_visualizer.main:main
+
